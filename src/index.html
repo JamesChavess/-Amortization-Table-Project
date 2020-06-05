@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tabla de Amortización </title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <section class="contenedorPrincipal">
+        <form class="formulario" id="informacionCuota">
+            <label class="labelInputs" for="valorCredito"> Valor del credito </label>
+            <input type="number" id="valorCredito" class="inputs" required></input>
+
+            <label class="labelInputs" for="tasaInteres"> Tasa de interes (%) </label>
+            <input type="number" id="tasaInteres" class="inputs" required></input>
+
+            <label class="labelInputs" for="cantidadCuotas"> Cantidad de cuotas </label>
+            <input type="number" id="cantidadCuotas" class="inputs" required></input>
+            
+            <div class="opciones">
+                <button type="submit" id="botonCalcular"> Calcular </button>
+                <button type="reset" id="botonLimpiar"> Limpiar </button>
+            </div>
+        </form>
+        <table class="tablaInformacionCredito">
+            <caption> Tabla de Amortizacion </caption>
+            <thead>
+                <tr>
+                    <td>Número de Cuota</td>
+                    <td>Saldo Inicial</td>
+                    <td>Abono capital</td>
+                    <td>Valor interes</td>
+                    <td>Valor cuota</td>
+                    <td>Saldo final</td>
+                </tr>
+            </thead>
+            <tbody id="tablaContenido">
+
+            </tbody>
+        </table>
+    </section>
+    <script type="module" src="./js/main.copy.js"></script>
+</body>
+</html>

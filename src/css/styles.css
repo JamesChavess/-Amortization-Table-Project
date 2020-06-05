@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.contenedorPrincipal {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+}
+
+.formulario{
+    flex: 1;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(
+        180deg,
+        #ffffff 23.44%,
+        rgba(255, 255, 255, 0) 100%
+        ),
+        rgba(0, 0, 0, 0.37);
+    border: 2px solid #000000;
+    box-shadow: 12px 7px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+.labelInputs {
+  text-align: center;
+}
+
+.formulario input{
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.opciones{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.opciones button{
+  flex: 1;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #FAFAFA;
+  outline: none;
+}
+
+.opciones button:hover{
+  cursor: pointer;
+}
+
+#botonCalcular{
+  background:rgba(0, 255, 55, 0.747);
+}
+
+#botonLimpiar{
+  background: #C22C2B;
+}
+
+.tablaInformacionCredito {
+  flex: 4;
+  border-collapse: collapse;
+}
+
+.tablaInformacionCredito thead {
+  background: #7A7A7A;
+  border-bottom: 2px solid #606060;
+  color: white;
+}
+
+.tablaInformacionCredito td {
+  padding: 10px;
+}
+
+.tablaInformacionCredito tbody tr {
+    border-bottom: 2px solid #CDCDCD;
+    color: black;
+}
